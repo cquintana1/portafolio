@@ -1,0 +1,20 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import ProjectCard from '../components/ProjectCard.astro';
+---
+
+<BaseLayout>
+  <h1>Mis Proyectos</h1>
+  <div class="projects">
+    <ProjectCard project={{
+      title: 'Proyecto 1',
+      description: 'Descripción del proyecto 1',
+      image: '/images/proyecto1.jpg'
+    }} />
+    <ProjectCard project={{
+      title: 'Proyecto 2',
+      description: 'Descripción del proyecto 2',
+      image: '/images/proyecto2.jpg'
+    }} />
+  </div>
+</BaseLayout>
