@@ -7,14 +7,23 @@ import ProjectCard from '../components/ProjectCard.astro';
   <h1>Mis Proyectos</h1>
   <div class="projects">
     <ProjectCard project={{
-      title: 'Proyecto 1',
-      description: 'Descripción del proyecto 1',
-      image: '/images/proyecto1.jpg'
+      title: 'Calculadora con Astro',
+      description: 'Una calculadora funcional, realizada con Astro y el despliegue en Vercel.',
+      Link: 'https://calculadora-astro-seven.vercel.app/'   ,  
+      image: '/public/images/Calculadora.JPG'                           
     }} />
     <ProjectCard project={{
-      title: 'Proyecto 2',
-      description: 'Descripción del proyecto 2',
-      image: '/images/proyecto2.jpg'
+      title: 'PokeApi',
+      description: 'Se coloca el nombre del Pokémon y nos arroja su imagen, peso y altura.',
+      Link:'https://github.com/cquintana1/PokeApi/',
+          image: '/public/images/pikachu.jpg'
     }} />
+
+<ProjectCard project={{
+  title: 'Registro y Login de usuarios',
+  description: 'Página web que permite el login de un usuario con username y contraseña.\nUna vez ingresando la página contendrá un mensaje de bienvenida y un par de botones para hacer.\n1: Una petición Get a una API pública\n2: Una petición Post a una API pública.',
+  Link:'https://github.com/cquintana1/LoginUser',
+      image: '/public/images/Registro.jpg'
+}} />
   </div>
 </BaseLayout>
